@@ -1,0 +1,95 @@
+/*
+	AnythingSlider v1.8+ Default theme
+	By Chris Coyier: http://css-tricks.com
+	with major improvements by Doug Neiner: http://pixelgraphics.us/
+	based on work by Remy Sharp: http://jqueryfordesigners.com/
+*/
+
+/*****************************
+  SET DEFAULT DIMENSIONS HERE
+ *****************************/
+/* change the ID & dimensions to match your slider */
+.slider01 {width:840px;list-style: none;overflow-y: auto;overflow-x: hidden;height:578px}
+.slider02 {list-style: none;overflow-y: auto;overflow-x: hidden;height:490px;}
+.slider02 li.panel{width:520px;text-align:center}
+
+.anythingSlider-default {}
+.anythingSlider-default .anythingWindow {border: 1px solid #069be2;}
+.anythingSlider-default .anythingControls a {display:none}
+.anythingSlider-default .anythingControls a span {visibility: visible;}
+.anythingSlider-default .anythingControls a.cur {}
+.anythingSlider-default .anythingControls a.start-stop {display:none}
+.anythingSlider-metallic .anythingControls a.start-stop {display:none}
+.anythingSlider-default .anythingControls a.start-stop.playing {}
+.anythingSlider-default .anythingControls a.start-stop:hover, 
+.anythingSlider-default .anythingControls a.start-stop.hover,
+.anythingSlider-default .anythingControls a.start-stop .anythingControls ul a:hover {}
+
+.anythingSlider-default.activeSlider .anythingWindow {border:1px solid #069be2;}
+.anythingSlider-default.activeSlider .anythingControls a {}
+.anythingSlider-default.activeSlider .anythingControls a.cur,
+.anythingSlider-default.activeSlider .anythingControls a:hover {}
+
+.anythingSlider-default.activeSlider .anythingControls a.start-stop {display:none !important}
+.anythingSlider-metallic.activeSlider .anythingControls a.start-stop {display:none !important}
+.anythingSlider-default.activeSlider .anythingControls a.start-stop.playing {}
+.anythingSlider-default.activeSlider .start-stop:hover,
+.anythingSlider-default.activeSlider .start-stop.hover {}
+
+/************************
+NAVIGATION POSITIONING
+************************/
+/* Navigation Arrows */
+.anythingSlider-default .arrow {top: 45%;position: absolute;display: block;}
+.anythingSlider-default .arrow a {display: block;width:40px;height:40px;text-align: center;outline: 0;}
+
+/* back arrow */
+.anythingSlider-default .back { left: -50px; }
+.anythingSlider-default .back a {background:url(../images/prev_arr.png) no-repeat}
+/* forward arrow */
+.anythingSlider-default .forward { right: -50px; }
+.anythingSlider-default .forward a {background:url(../images/next_arr.png) no-repeat}
+
+.anythingSlider-metallic .arrow {top: 45%;position: absolute;display: block;}
+.anythingSlider-metallic .arrow a {display: block;width:30px;height:58px;text-align: center;outline: 0;}
+
+/* back arrow */
+.anythingSlider-metallic .back { left:0px; }
+.anythingSlider-metallic .back a {background:url(../images/prev_arr2.png) no-repeat}
+/* forward arrow */
+.anythingSlider-metallic .forward { right:0px; }
+.anythingSlider-metallic .forward a {background:url(../images/next_arr2.png) no-repeat}
+
+/* Navigation Links */
+.anythingSlider-default .anythingControls {outline: 0; display: none; }
+.anythingSlider-metallic .anythingControls {outline: 0; display: none !important; }
+.anythingSlider-default .anythingControls ul { margin: 0; padding: 0; float: left; }
+.anythingSlider-default .anythingControls ul li { display: inline; }
+.anythingSlider-default .anythingControls ul a {}
+
+/* navigationSize window */
+.anythingSlider-default .anythingControls .anythingNavWindow {overflow: hidden;float: left;}
+
+/* Autoplay Start/Stop button */
+.anythingSlider-default .anythingControls .start-stop {}
+
+/***********************
+COMMON SLIDER STYLING
+***********************/
+/* Overall Wrapper */
+.anythingSlider {display: block;overflow: visible !important;position: relative;}
+.anythingSlider .anythingWindow {overflow: hidden;position: relative;width: 100%;height: 100%;}
+.anythingSlider .anythingBase {background: transparent;list-style: none;position: absolute;overflow: visible !important;top: 0;left: 0;margin: 0;padding: 0;}
+.anythingSlider .arrow span {display: block;visibility: hidden;}
+.anythingSlider .arrow.disabled {display: none;}
+.anythingSlider .panel {background: transparent;display: block;overflow: hidden;float: left;padding: 0;margin: 0;}
+.anythingSlider .vertical .panel {float: none;}
+.anythingSlider .fade .panel {float: none;position: absolute;top: 0;left: 0;z-index: 0;}
+.anythingSlider .fade .activePage {z-index: 1;}
+
+/* probably not necessary, but added just in case */
+.anythingSlider,
+.anythingSlider .anythingWindow,
+.anythingSlider .anythingControls ul a,
+.anythingSlider .arrow a,
+.anythingSlider .start-stop {transition-duration: 0;-o-transition-duration: 0;-moz-transition-duration: 0;-webkit-transition-duration: 0;}
